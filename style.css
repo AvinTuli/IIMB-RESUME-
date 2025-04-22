@@ -1,0 +1,100 @@
+:root {
+  --primary: black;                /* For navbar background */
+  --accent: goldenrod;             /* For highlights and hero section */
+  --bg: ghostwhite;                /* Soft background */
+  --text: dimgray;                 /* Main body text */
+  --card-bg: white;                /* For skill cards */
+  --border-radius: 8px;
+  --spacing: 16px;
+  --font-primary: 'Inter', sans-serif;
+  --font-mono: 'Fira Code', monospace;
+}
+
+body {
+  font-family: var(--font-primary);
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+  color: white;
+  padding: var(--spacing);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: var(--accent);
+  color: white;
+}
+
+.hero .highlight {
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.content-section {
+  padding: 40px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cards .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  flex: 1 1 150px;
+  text-align: center;
+  font-weight: 600;
+}
+
+h3 {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: var(--accent);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: lightgray;
+  font-size: 0.9rem;
+}
